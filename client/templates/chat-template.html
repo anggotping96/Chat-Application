@@ -1,11 +1,20 @@
 <template name="appChat">
 {{#each messages}}
 <div class="alert alert-info">
-<b>{{name}}</b> : {{text}} <button  class="btn btn-danger btn-small btnDelete">&times;</button>
+<center>Student Number: <b>{{StudentNo}}</b> , Course: <b>{{Course}}</b> <br> Name: <b>{{Name}}</b> , Date of Birth: <b>{{DateOfBirth}}</b> <br> Civil Status: <b>{{CivilStatus}}</b> , Gender: <b>{{Gender}}</b> <br> Blood Type: <b>{{BloodType}}</b> , Height: <b>{{Height}}</b> <br> Weight: <b>{{Weight}}</b> , Address: <b>{{text}}</b> <button  class="btn btn-danger btn-small btnDelete">&times;</button></center>
 </div>
 {{/each}}
+<center>
 <form class="form">
-<input type="text" class="form-control txtName" placeholder="Username" />
-<input type="text" class="form-control txtText" placeholder="Type A Message" />
-</form>
+<input type="text" class="form-control txtStudentNo" placeholder="Student Number" />
+<input type="text" class="form-control txtCourse" placeholder="Course" /><br>
+<input type="text" class="form-control txtName" placeholder="Name" />
+<input type="text" class="form-control txtDateOfBirth" placeholder="Date Of Birth" /><br>
+<input type="text" class="form-control txtCivilStatus" placeholder="Civil Status" />
+<input type="text" class="form-control txtGender" placeholder="Gender" /><br>
+<input type="text" class="form-control txtBloodType" placeholder="Blood Type" />
+<input type="text" class="form-control txtHeight" placeholder="Height" /><br>
+<input type="text" class="form-control txtWeight" placeholder="Weight" />
+<input type="text" class="form-control txtText" placeholder="Address" /><br>
+</form></center>
 </template>
